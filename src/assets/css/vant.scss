@@ -1,0 +1,111 @@
+@import './common/var.scss';
+.van-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  line-height: 0;
+  &--primary {
+    background-color: #52cc52;
+  }
+  &--danger {
+    background-color: #ff4c4c;
+  }
+  &--sure {
+    background-color: $primary;
+  }
+  &--cancle {
+    background-color: $gray-lighter;
+  }
+}
+
+.van-radio {
+  display: flex;
+  align-items: center;
+  .van-icon-checked {
+    color: #007bff;
+  }
+  &__input {
+    height: 40px;
+  }
+  &__value {
+    line-height: 50px;
+  }
+  &__label {
+    line-height: 50px;
+  }
+  .van-icon {
+    font-size: 24px;
+  }
+}
+
+.van-checkbox {
+  &__label {
+    margin-left: 5px;
+    color: #303133;
+  }
+  &__icon--checked .van-icon {
+    color: #fff;
+    border-color: #007bff;
+    background-color: #007bff;
+  }
+}
+
+.van-nav-bar {
+  .van-icon {
+    color: #fff;
+  }
+  &__text {
+    color: #fff;
+  }
+  &__title {
+    font-size: 30px;
+    color: #fff;
+  }
+  &__left {
+    font-size: 30px;
+  }
+}
+
+.van-toast {
+  font-size: 28px;
+  white-space: nowrap;
+}
+
+.van-dialog {
+  &__header {
+    padding: 30px 0;
+  }
+}
+
+.van-cell {
+  font-size: 28px;
+  line-height: 50px;
+  align-items: center;
+  /*no*/
+}
+
+.van-field .van-cell {
+  &__title {
+    max-width: 150px;
+  }
+}
+
+.van-picker {
+  &__confirm,
+  &__cancel {
+    display: none;
+  }
+  &__title {
+    max-width: none;
+    width: 100%;
+  }
+  &__columns {
+    font-size: 30px;
+  }
+}
